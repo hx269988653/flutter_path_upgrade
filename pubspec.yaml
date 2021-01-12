@@ -1,0 +1,32 @@
+name: flutter_path_upgrade
+description: A new Flutter plugin.
+version: 0.0.1
+author: hx
+homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.20.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  archive: ^2.0.13  #解压文件
+  dio: ^3.0.10
+  encrypt: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  plugin:
+    platforms:
+      android:
+        package: com.hx.flutter_path_upgrade
+        pluginClass: FlutterPathUpgradePlugin
+      ios:
+        pluginClass: FlutterPathUpgradePlugin
+
